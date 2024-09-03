@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.multi-line-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.relative {
+    position: relative;
+}
+
+#deletePhotoButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.relative:hover #deletePhotoButton {
+    opacity: 1;
+}
